@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET MAUI Windows",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-windows",
+      "program": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}\\xptv\\xptv.csproj",
+        "--framework",
+        "net9.0-windows10.0.19041.0"
+      ],
+      "cwd": "${workspaceFolder}\\xptv",
+      "console": "externalTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:xptv.Presentation.Common.Components.Loading.ViewModels"
+             x:Class="xptv.Presentation.Common.Components.Loading.Views.LoadingOverlayView"
+             x:DataType="viewModels:LoadingOverlayViewModel">
+    <Grid IsVisible="{Binding IsLoading}"
+          InputTransparent="False"
+          Background="#88000000"
+          Grid.RowSpan="3">
+        <VerticalStackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center"
+                             Spacing="20">
+            <ActivityIndicator IsRunning="{Binding IsLoading}"
+                               Color="White"
+                               HeightRequest="50"
+                               WidthRequest="50" />
+            <Label Text="{Binding Message}"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentView>
