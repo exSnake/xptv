@@ -50,7 +50,7 @@ The project follows Clean Architecture principles with a domain-driven design ap
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/xptv.git
+git clone https://github.com/exSnake/xptv.git
 ```
 
 2. Open the solution in your preferred IDE
@@ -70,6 +70,8 @@ dotnet build
 #### Windows/macOS
 ```bash
 dotnet run
+or
+dotnet run --framework net9.0-windows10.0.19041.0
 ```
 
 For iOS/Android, use your IDE's built-in deployment tools or:
